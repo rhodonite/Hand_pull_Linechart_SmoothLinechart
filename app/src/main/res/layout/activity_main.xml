@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin"
+        android:orientation="vertical" >
+
+        <com.rhodonite.linechart_smoothlinechart.SmoothLineChart
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/smoothChart"
+            android:background="@android:color/white" />
+
+
+        <com.rhodonite.linechart_smoothlinechart.SmoothLineChartEquallySpaced
+            android:layout_marginTop="@dimen/margin"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/smoothChartES"
+            android:background="@android:color/white" />
+
+        <com.rhodonite.linechart_smoothlinechart.SimpleLineChart
+            android:id="@+id/simpleLineChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="@dimen/margin" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Random Number"
+            android:id="@+id/button"
+            android:layout_gravity="right"
+            android:layout_marginTop="120dp" />
+    </LinearLayout>
+</RelativeLayout>
