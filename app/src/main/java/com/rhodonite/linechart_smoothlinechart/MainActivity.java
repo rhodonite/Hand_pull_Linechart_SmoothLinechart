@@ -129,15 +129,6 @@ public class MainActivity extends Activity {
                     case MotionEvent.ACTION_POINTER_UP:
                         break;
                     case MotionEvent.ACTION_MOVE:
-                        /**
-                         *
-                         *
-                         *   if send data, always need -5
-                         *
-                         *
-                         ***/
-
-
                         int temp_Y = (int) ((chartES.mBorder_height - Y) / chartES.height_dY);
                         int temp_X = (int) ((X - chartES.get_mBorder) / chartES.width_dX);
 
